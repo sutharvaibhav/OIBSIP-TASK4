@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Authentication</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- Signup Form -->
+        <div class="reg-form" id="reg-form">
+            <h1 id="title" class="form-title">REGISTER</h1>
+            <div class="form-content">
+                <form> 
+                    <input type="name" id="signupNameField" placeholder="Name"/><br/>
+                    <input type="text" id="signupEmailField" placeholder="Username"/><br/>
+                    <input type="password" id="signupPassField" placeholder="Password"/><br/>
+                    <a id="switchLogin" class="switchBt">Have an account? Login Here</a><br/>
+                    <div class="action">
+                        <button id="signBt" onclick=signUp() >Register</button>
+                    </div>                    
+                </form>                
+            </div>
+        </div>
+
+        <!-- Login Form -->
+        <div class="login-form" id="login-form">
+            <h1 class="form-title">LOGIN</h1>
+            <div class="form-content">
+                <form action="">
+                    <input type="text" placeholder="Username" id="loginEmailField"/><br/>
+                    <input type="password" placeholder="Password" id="loginPassField"/><br/>
+                    <a id="forgot">Forget Password?</a><br/>
+                    <a id="switchSignup" class="switchBt">Don't have account? Register Here</a><br/>
+                    <div class="action">
+                        <button id="loginBt" onclick=logIn()>Log in</button>
+                    </div>                    
+                </form>                
+            </div>
+        </div>
+    </div>  
+    <script src="script.js"></script>
+</body>
+</html>
